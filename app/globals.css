@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 218 14% 20%;
+    --primary: 218 100% 35%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 195 100% 40%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 195 89% 53%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 218 14% 88%;
+    --muted-foreground: 218 14% 45%;
+    --border: 218 14% 88%;
+    --card-bg: 0 0% 100%;
+    --radius: 8px;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    @apply bg-background;
+  }
+}
+
+@layer components {
+  .button-primary {
+    @apply px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold transition-colors hover:bg-blue-700;
+  }
+
+  .button-secondary {
+    @apply px-6 py-3 border-2 border-primary text-primary rounded-lg font-semibold transition-colors hover:bg-blue-50;
+  }
+}
