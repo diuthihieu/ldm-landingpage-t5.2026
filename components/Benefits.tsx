@@ -52,7 +52,7 @@ export default function Benefits() {
             return (
               <div
                 key={i}
-                className="p-8 bg-card-bg border border-border rounded-xl hover:shadow-lg transition-shadow"
+                className="p-8 bg-white border border-border rounded-xl hover:shadow-lg transition-shadow"
               >
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon className="text-primary" size={24} />
